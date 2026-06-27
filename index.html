@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>BAS Investments — Buy Back Your Time</title>
 <meta name="description" content="Financial literacy, investing, and trading education. Join our Discord community and learn to trade, one share and one contract at a time." />
- 
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
- 
+
 <style>
   :root{
     --ink:        #0A0A0A;
@@ -26,7 +26,7 @@
     --display:    "Fraunces", "Times New Roman", serif;
     --body:       "Inter", system-ui, sans-serif;
   }
- 
+
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
   body{
@@ -38,7 +38,7 @@
     overflow-x:hidden;
     -webkit-font-smoothing:antialiased;
   }
- 
+
   /* Grain overlay for atmosphere */
   body::before{
     content:"";
@@ -49,9 +49,9 @@
     opacity:.5;
     mix-blend-mode:overlay;
   }
- 
+
   .wrap{max-width:1200px; margin:0 auto; padding:0 2rem; position:relative; z-index:2}
- 
+
   /* ========== NAV ========== */
   nav{
     position:fixed; top:0; left:0; right:0;
@@ -90,7 +90,7 @@
   }
   .nav-links a:hover{color:var(--gold-2)}
   @media (max-width:720px){ .nav-links{display:none} }
- 
+
   /* ========== HERO ========== */
   header{
     min-height:100vh;
@@ -125,7 +125,7 @@
     from{transform:translateX(0)}
     to{transform:translateX(-50%)}
   }
- 
+
   /* decorative frame */
   header::before{
     content:"";
@@ -137,7 +137,7 @@
       radial-gradient(ellipse at 70% 70%, rgba(46,125,91,0.10), transparent 60%);
     filter:blur(20px);
   }
- 
+
   .hero-grid{
     display:grid;
     grid-template-columns:1.2fr 1fr;
@@ -145,7 +145,7 @@
     align-items:center;
   }
   @media (max-width:900px){ .hero-grid{grid-template-columns:1fr} }
- 
+
   .eyebrow{
     display:inline-flex; align-items:center; gap:.75rem;
     font-size:.72rem;
@@ -157,7 +157,7 @@
   .eyebrow::before{
     content:""; width:32px; height:1px; background:var(--gold);
   }
- 
+
   h1{
     font-family:var(--display);
     font-weight:400;
@@ -185,7 +185,7 @@
     animation:reveal 1.2s .8s ease forwards;
   }
   @keyframes reveal{to{transform:scaleX(1)}}
- 
+
   .lede{
     font-size:1.1rem;
     color:var(--muted);
@@ -193,7 +193,7 @@
     margin-bottom:2.5rem;
   }
   .hero-ctas{display:flex; gap:1rem; flex-wrap:wrap}
- 
+
   /* ========== BUTTONS ========== */
   .btn{
     display:inline-flex; align-items:center; gap:.75rem;
@@ -233,7 +233,7 @@
     transition:transform .35s ease;
   }
   .btn:hover .arrow{transform:translateX(4px)}
- 
+
   /* Hero aside card */
   .hero-aside{
     border:1px solid var(--line);
@@ -271,7 +271,7 @@
     text-transform:uppercase;
     color:var(--muted);
   }
- 
+
   /* ========== SECTIONS ========== */
   section{padding:7rem 0; position:relative}
   .section-num{
@@ -289,7 +289,7 @@
     max-width:20ch;
   }
   h2 em{font-style:italic; color:var(--gold-2); font-weight:300}
- 
+
   /* ========== MISSION ========== */
   .mission{
     border-top:1px solid var(--line);
@@ -316,7 +316,7 @@
     color:var(--gold-2);
     font-style:italic;
   }
- 
+
   /* ========== VALUE / MODULES ========== */
   .value{
     background:var(--ink-2);
@@ -357,7 +357,7 @@
     color:var(--muted);
     font-size:.92rem;
   }
- 
+
   .each-one{
     margin-top:4rem;
     padding:2.5rem;
@@ -371,7 +371,7 @@
   .each-one strong{
     font-style:normal; font-weight:500; color:var(--parchment);
   }
- 
+
   /* ========== RECEIPTS ========== */
   .receipts{
     border-top:1px solid var(--line);
@@ -394,7 +394,7 @@
     font-size:1.05rem;
     max-width:50ch;
   }
- 
+
   /* stat banner */
   .stat-banner{
     display:grid;
@@ -431,7 +431,7 @@
     text-transform:uppercase;
     color:var(--muted);
   }
- 
+
   /* receipt grid */
   .receipt-grid{
     display:grid;
@@ -460,7 +460,7 @@
   .receipt:nth-child(3n+1){ transform:rotate(-.8deg); }
   .receipt:nth-child(3n+2){ transform:rotate(.6deg); }
   .receipt:nth-child(3n+3){ transform:rotate(-.3deg); }
- 
+
   .receipt-img{
     width:100%;
     aspect-ratio:3/4;
@@ -497,7 +497,7 @@
     color:#666;
     margin-top:.2rem;
   }
- 
+
   /* grid placement - magazine-style varied sizing */
   .r-1{grid-column:span 4}
   .r-2{grid-column:span 4}
@@ -516,7 +516,7 @@
   @media (max-width:560px){
     .receipt-grid > *{grid-column:span 12 !important}
   }
- 
+
   .disclaimer{
     margin-top:3.5rem;
     padding:1.5rem 1.75rem;
@@ -538,7 +538,7 @@
     margin-bottom:.4rem;
     font-weight:500;
   }
- 
+
   /* ========== JOIN ========== */
   .join{
     background:linear-gradient(180deg, var(--ink) 0%, #0F2A1F 100%);
@@ -600,7 +600,7 @@
   }
   .step-link .arrow{transition:transform .35s ease}
   .step:hover .step-link .arrow{transform:translateX(6px)}
- 
+
   /* ========== BOOK / TIWIK ========== */
   .book{
     border-top:1px solid var(--line);
@@ -612,7 +612,7 @@
     align-items:center;
   }
   @media (max-width:800px){ .book-grid{grid-template-columns:1fr} }
- 
+
   .book-visual{
     aspect-ratio:4/5;
     background:
@@ -660,7 +660,7 @@
     color:var(--muted);
     position:relative; z-index:2;
   }
- 
+
   .book-copy h2{margin-bottom:1.5rem}
   .book-copy p{
     color:var(--muted);
@@ -668,7 +668,7 @@
     margin-bottom:2rem;
     max-width:48ch;
   }
- 
+
   /* ========== FOOTER ========== */
   footer{
     padding:3rem 0 2rem;
@@ -686,7 +686,7 @@
     text-transform:uppercase;
     color:var(--muted);
   }
- 
+
   /* ========== REVEAL ANIMATION ========== */
   .reveal{
     opacity:0;
@@ -700,7 +700,7 @@
 </style>
 </head>
 <body>
- 
+
 <nav>
   <a href="#top" class="logo">
     <span class="logo-mark">B</span>
@@ -714,7 +714,7 @@
     <a href="#book">Book</a>
   </div>
 </nav>
- 
+
 <header id="top">
   <div class="wrap">
     <div class="hero-grid">
@@ -737,7 +737,7 @@
           </a>
         </div>
       </div>
- 
+
       <aside class="hero-aside">
         <div class="aside-label">— The thesis</div>
         <p class="aside-quote">
@@ -748,7 +748,7 @@
       </aside>
     </div>
   </div>
- 
+
   <div class="ticker" aria-hidden="true">
     <div class="ticker-inner">
       <span>Education</span><span>Ownership</span><span>Discipline</span>
@@ -760,7 +760,7 @@
     </div>
   </div>
 </header>
- 
+
 <section id="mission" class="mission">
   <div class="wrap">
     <div class="mission-grid reveal">
@@ -783,7 +783,7 @@
     </div>
   </div>
 </section>
- 
+
 <section id="receipts" class="receipts">
   <div class="wrap">
     <div class="receipts-head reveal">
@@ -797,7 +797,7 @@
         the community learns from every week.
       </p>
     </div>
- 
+
     <div class="stat-banner reveal">
       <div class="stat">
         <div class="stat-num">+<em>401</em>%</div>
@@ -816,9 +816,9 @@
         <div class="stat-label">Contracts Closed Green</div>
       </div>
     </div>
- 
+
     <div class="receipt-grid reveal">
- 
+
       <figure class="receipt r-1">
         <img class="receipt-img" src="receipts/options-strategies.jpeg" alt="Options strategies total return of +$90,055 (+401.55%)" />
         <figcaption class="receipt-meta">
@@ -827,7 +827,7 @@
         </figcaption>
         <div class="receipt-caption">Total return across active strategies</div>
       </figure>
- 
+
       <figure class="receipt r-2">
         <img class="receipt-img" src="receipts/total-gain-table.jpeg" alt="Total gain table: HIMS +227.08%, NVDA +50.64%, PLTR +230.73%, SOFI +60.71%" />
         <figcaption class="receipt-meta">
@@ -836,7 +836,7 @@
         </figcaption>
         <div class="receipt-caption">Total gain by symbol</div>
       </figure>
- 
+
       <figure class="receipt r-4">
         <img class="receipt-img" src="receipts/sofi-22-call.jpeg" alt="SOFI $22 Call, realized profit +$33,196 (+371.16%)" />
         <figcaption class="receipt-meta">
@@ -845,7 +845,7 @@
         </figcaption>
         <div class="receipt-caption">Closed Jul 29, 2025</div>
       </figure>
- 
+
       <figure class="receipt r-5">
         <img class="receipt-img" src="receipts/bmnr-call.jpeg" alt="BMNR $49 Call, realized profit +$5,940 (+267.57%)" />
         <figcaption class="receipt-meta">
@@ -854,7 +854,7 @@
         </figcaption>
         <div class="receipt-caption">Closed Sep 18, 2025</div>
       </figure>
- 
+
       <figure class="receipt r-6">
         <img class="receipt-img" src="receipts/sofi-215-call.jpeg" alt="SOFI $21.5 Call, realized profit +$13,440 (+133.34%)" />
         <figcaption class="receipt-meta">
@@ -863,7 +863,7 @@
         </figcaption>
         <div class="receipt-caption">Closed Jul 23, 2025</div>
       </figure>
- 
+
       <figure class="receipt r-7">
         <img class="receipt-img" src="receipts/crwv-call.jpeg" alt="CRWV $120 Call, realized profit +$5,760 (+128.00%)" />
         <figcaption class="receipt-meta">
@@ -872,7 +872,7 @@
         </figcaption>
         <div class="receipt-caption">Closed Sep 25, 2025</div>
       </figure>
- 
+
       <figure class="receipt r-8">
         <img class="receipt-img" src="receipts/msft-call.jpeg" alt="MSFT $450 Call, realized profit +$2,200 (+102.33%)" />
         <figcaption class="receipt-meta">
@@ -881,7 +881,7 @@
         </figcaption>
         <div class="receipt-caption">Closed Apr 16, 2026</div>
       </figure>
- 
+
       <figure class="receipt r-9">
         <img class="receipt-img" src="receipts/hims-call.png" alt="HIMS $40 Call open position, +$424 (+21.24%)" />
         <figcaption class="receipt-meta">
@@ -890,7 +890,7 @@
         </figcaption>
         <div class="receipt-caption">Open — 12/17/27 expiration</div>
       </figure>
- 
+
       <figure class="receipt r-10">
         <img class="receipt-img" src="receipts/mu-position.jpeg" alt="MU Micron Technology position, +$4,035.63 (+41.88%)" />
         <figcaption class="receipt-meta">
@@ -899,9 +899,9 @@
         </figcaption>
         <div class="receipt-caption">Knowing when to buy</div>
       </figure>
- 
+
     </div>
- 
+
     <div class="disclaimer reveal">
       <strong>— A note on performance</strong>
       The screenshots above reflect actual positions and realized trades from
@@ -910,12 +910,12 @@
       including the potential loss of principal. BAS Investments provides
       education and community; nothing here is individualized investment advice.
     </div>
- 
+
   </div>
 </section>
- 
+
 <!-- receipts end -->
- 
+
 <section id="value" class="value">
   <div class="wrap">
     <div class="reveal">
@@ -926,7 +926,7 @@
         a curriculum, and a network. Follow the trades, then learn to make your own.
       </p>
     </div>
- 
+
     <div class="modules reveal">
       <div class="module">
         <span class="module-num">i.</span>
@@ -969,20 +969,20 @@
         <div class="module-desc">The inner game of money: patience, conviction, staying the course.</div>
       </div>
     </div>
- 
+
     <div class="each-one reveal">
       <strong>Each one,</strong> teach one.
     </div>
   </div>
 </section>
- 
+
 <section id="join" class="join">
   <div class="wrap">
     <div class="reveal">
       <span class="section-num">04 — Join</span>
       <h2>Two steps <em>to get started.</em></h2>
     </div>
- 
+
     <div class="steps">
       <a href="https://basinvestment.github.io/bas-join1/" target="_blank" rel="noopener" class="step reveal">
         <div class="step-label">— Step one</div>
@@ -993,7 +993,7 @@
         </div>
         <div class="step-link">Open Checkout <span class="arrow">→</span></div>
       </a>
- 
+
       <a href="https://discord.com/invite/tCSDUzJhx" target="_blank" rel="noopener" class="step reveal">
         <div class="step-label">— Step two</div>
         <div class="step-title">Enter the Discord</div>
@@ -1006,7 +1006,7 @@
     </div>
   </div>
 </section>
- 
+
 <section id="book" class="book">
   <div class="wrap">
     <div class="book-grid reveal">
@@ -1019,7 +1019,7 @@
         </div>
         <div class="book-author">By the founder of BAS</div>
       </div>
- 
+
       <div class="book-copy">
         <span class="section-num">05 — Also by the author</span>
         <h2>A children's book on <em>financial literacy.</em></h2>
@@ -1035,14 +1035,14 @@
     </div>
   </div>
 </section>
- 
+
 <footer>
   <div class="wrap">
     <div class="foot-mark">BAS Investments</div>
     <div class="foot-copy">Educate · Impact · Each one teach one</div>
   </div>
 </footer>
- 
+
 <script>
   // Reveal on scroll
   const io = new IntersectionObserver((entries)=>{
@@ -1055,7 +1055,6 @@
   }, {threshold:.12});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
- 
+
 </body>
 </html>
- 
